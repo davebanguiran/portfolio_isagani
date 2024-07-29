@@ -1,0 +1,91 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212;
+    color: #FFFFFF;
+}
+
+header, .intro, .about, .portfolio, .image-slider {
+    padding: 50px 20px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h1, h2 {
+    color: #00D084;
+}
+
+p {
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+.buttons {
+    margin-top: 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-right: 10px;
+    background-color: #00D084;
+    color: #FFFFFF;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #00B573;
+}
+
+/* Reduce the size of the images in the social-links section */
+.social-links img {
+    width: 700px; /* previously 60px */
+    height: auto; /* previously 60px */
+    margin: 0 10px;
+    max-width: 100%;
+    cursor: pointer;
+    margin: 0 10px; 
+}
+
+/* Reduce the size of the images in the image-slider section */
+.image-slider .slides img {
+    width: 700px; /* set a specific width */
+    height: auto; /* maintain aspect ratio */
+    cursor: pointer;
+    max-width: 100%;
+    margin: 0 10px; 
+}
+
+.social-links {
+    text-align: center;
+    margin-top: 20px;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.social-links .slides {
+    display: inline-flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.image-slider {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.slider {
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
